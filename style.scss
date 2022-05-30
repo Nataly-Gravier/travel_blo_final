@@ -1,0 +1,533 @@
+$yellow: #f2f7ba;
+$blue: #2b80b9;
+
+html {
+    font-family: 'RocknRoll One', sans-serif;
+
+    body {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 50vh 10vh 100vh auto 40vh 30vh 20vh;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "bali bali"
+            "popular articos"
+            "parceiros parceiros"
+            "avioes avioes"
+            "footer footer";
+
+
+        header {
+            grid-area: header;
+            background-image: url(./imagens/beach.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+        }
+
+    }
+}
+
+#hamburger {
+    display: none;
+    margin-left: 10px
+}
+
+#navbarTitle {
+    display: none
+}
+
+#mainTitle {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+#hamburgerandtitle p {
+    font-size: 0.6rem;
+
+}
+
+#hamburgerandtitle {
+    text-align: center;
+}
+
+#mainTitle span {
+    font-size: 6rem;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #f2f7ba;
+}
+
+#navigationLinks {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #2b80b9;
+    text-align: center;
+    margin: 1.6rem;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+#bali {
+    grid-area: bali;
+    background-image: url(./imagens/bali.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 5vw 20vw 75vw;
+    grid-template-rows: 35vh 55vh 10vh;
+}
+
+.relanguloazul {
+    background-color: #2b80b9;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: white;
+    border-radius: 1.5rem;
+    text-align: center;
+
+    h3 {
+        font-size: 2rem;
+        margin: auto;
+    }
+
+    h2:after {
+
+        display: block;
+        height: 2px;
+        background-color: #f2f7ba;
+        width: 250px;
+        content: "";
+        margin: 0 auto;
+        margin-bottom: 6px;
+    }
+
+    span {
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 3rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.fotonome {
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+#bali button {
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border-radius: 0.5rem;
+    border-style: none;
+    width: 8rem;
+    height: 2.5rem;
+}
+
+#popular {
+    grid-area: popular;
+    background-color: #2b80b9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(5, 1fr) auto;
+}
+
+.mapaicone {
+    text-align: center;
+}
+
+.mapaicone span {
+    font-size: 4rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+.mapaicone h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.mapaicone h2:after {
+
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 300px;
+    content: "";
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+#popular .card {
+    color: white;
+    text-align: center;
+    border: 0.2rem solid $yellow;
+    border-right: 0.3rem solid #f2f7ba;
+    border-bottom: 0.3rem solid #f2f7ba;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    box-shadow: 10px 5px 5px $yellow;
+
+}
+
+.topcard {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+#popular .utilizator {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+#popular .lugar {
+    border: white solid 0.3rem;
+    display: block;
+    margin: 30px auto;
+}
+
+#popular button {
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border-radius: 0.5rem;
+    border-style: none;
+    width: 8rem;
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+.baixo {
+    margin: 1rem auto !important;
+}
+
+#articos {
+    grid-area: articos;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 2fr);
+    text-align: center;
+}
+
+.clockicone span {
+    color: #2b80b9;
+    font-size: 4rem;
+    margin-top: 1rem;
+
+}
+
+.clockicone h2 {
+    color: #2b80b9;
+}
+
+.clockicone:after {
+
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 250px;
+    content: "";
+    margin: 0 auto;
+    margin-bottom: 1px;
+}
+
+.fotospequenas {
+
+    width: 5vh;
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.foto\+text button {
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border-radius: 0.5rem;
+    border-style: none;
+    width: 8rem;
+    height: 2.5rem;
+
+}
+
+hr {
+    background-color: #2b80b9;
+    height: 2px;
+    width: 1000px;
+}
+
+.lugar {
+    width: 20vw;
+}
+
+.imgpn {
+    width: 20vw;
+}
+
+.lugardif {
+    width: 20vw;
+
+}
+
+#parceiros {
+    grid-area: parceiros;
+    background-image: url(./imagens/plane.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#avioes {
+    grid-area: avioes;
+    background-color: #2b80b9;
+}
+
+#avioes img {
+    width: 10vw;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.campo1 h3 {
+    color: #2b80b9;
+}
+
+.campo1 h3:after {
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 250px;
+    content: "";
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+
+.topimagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.utilizatordif {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.lugardif {
+    width: 40vw;
+    border: 0.5rem solid #f2f7ba;
+}
+
+.campo1 button {
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border-radius: 0.5rem;
+    border-style: none;
+    width: 8rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.campo1 p {
+    margin: 4rem;
+}
+
+#parceiros {
+    text-align: center;
+}
+
+#parceiros span {
+    font-size: 3.5rem;
+    color: #2b80b9;
+    padding-top: 1rem;
+}
+
+#parceiros h2 {
+    color: #2b80b9;
+}
+
+#parceiros h2:after {
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 250px;
+    content: "";
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+
+#parceiros p {
+    color: white;
+}
+
+.imgpn {
+    margin: 1rem;
+}
+
+#avioes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+
+
+/************** media queries******************/
+/************** phones and tablets******************/
+@media screen and (max-width: 991px) {
+    nav {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+    }
+
+    #hamburger {
+        color: #2b80b9;
+        display: block;
+        text-align: left;
+        margin: 20px 20px;
+    }
+
+    #navbarTitle {
+        display: block;
+        margin: 20px 40px;
+
+    }
+
+    #hamburgerandtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hamburgerandtitle h2 {
+        margin: 0 auto;
+        margin-top: 23px;
+    }
+
+}
+
+/* media query tablettes */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40vh 100vh auto 40vh 30vh 20vh;
+        grid-template-areas:
+            "header header"
+            "bali bali"
+            "popular articos"
+            "parceiros parceiros"
+            "avioes avioes"
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    #bali {
+        grid-area: bali;
+    }
+
+    #popular {
+        grid-area: popular;
+    }
+
+    #articos {
+        grid-area: articos;
+    }
+
+    #parceiros {
+        grid-area: parceiros;
+    }
+
+    #avioes {
+        grid-area: avioes;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/* media query téléphones */
+@media screen and (max-width: 767px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 100vh auto auto 40vh 30vh 20vh;
+        grid-template-areas:
+            "header"
+            "bali"
+            "articos"
+            "popular"
+            "parceiros"
+            "avioes"
+            "footer";
+    }
+
+
+    header {
+        grid-area: header;
+    }
+
+    #bali {
+        grid-area: bali;
+    }
+
+    #popular {
+        grid-area: popular;
+    }
+
+    #articos {
+        grid-area: articos;
+    }
+
+    #parceiros {
+        grid-area: parceiros;
+    }
+
+    #avioes {
+        grid-area: avioes;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
